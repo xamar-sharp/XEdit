@@ -1,0 +1,19 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="XEdit.ClipboardPage" xmlns:local="clr-namespace:XEdit;assembly=XEdit" BackgroundColor="Orange">
+    <ContentPage.Content>
+        <StackLayout Orientation="Vertical" VerticalOptions="CenterAndExpand" BackgroundColor="Orange">
+            <Image Source="Clipboard_Title.png" Aspect="Fill" HeightRequest="200" WidthRequest="200" VerticalOptions="Center" HorizontalOptions="Center"/>
+            <Label Style="{local:Stylizator ClipboardLabel}" Text="{local:Localizer ClipboardLab}" HorizontalTextAlignment="Center"/>
+            <Frame Padding="1" CornerRadius="15" BackgroundColor="LightYellow">
+                <Entry Style="{local:Stylizator ClipboardEntry}" Text="{Binding Value,Mode=TwoWay}" Placeholder="{local:Localizer ClipboardPlace}" IsSpellCheckEnabled="False" MaxLength="128" Keyboard="Url" Completed="Entry_Completed"/>
+            </Frame>
+            <StackLayout Orientation="Horizontal" BackgroundColor="LightYellow">
+                <ImageButton BorderWidth="1" CornerRadius="90" HeightRequest="80" WidthRequest="80" Aspect="Fill" Source="Clipboard_0.png" Command="{Binding GetTextCommand}" BackgroundColor="LightYellow"/>
+                <ImageButton BorderWidth="1" CornerRadius="90" HeightRequest="80" WidthRequest="80" Aspect="Fill" Source="Clipboard_1.png" Command="{Binding SetTextCommand}" BackgroundColor="LightYellow"/>
+                <ImageButton BorderWidth="1" CornerRadius="90" HeightRequest="80" WidthRequest="80" Aspect="Fill" Source="Clipboard_2.png" Command="{Binding HasTextCommand}" BackgroundColor="LightYellow"/>
+            </StackLayout>
+        </StackLayout>
+    </ContentPage.Content>
+</ContentPage>

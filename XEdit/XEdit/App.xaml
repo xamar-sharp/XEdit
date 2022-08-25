@@ -1,0 +1,54 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<Application xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="XEdit.App">
+    <Application.Resources>
+        <ResourceDictionary>
+            <Style TargetType="Entry" x:Key="PrefEntry">
+                <Style.Setters>
+                    <Setter Property="PlaceholderColor" Value="DimGray"/>
+                    <Setter Property="FontSize" Value="Medium"/>
+                    <Setter Property="FontAttributes" Value="Italic"/>
+                    <Setter Property="TextColor" Value="Black"/>
+                </Style.Setters>
+            </Style>
+            <Style TargetType="Label" x:Key="PrefLabel">
+                <Style.Setters>
+                    <Setter Property="TextColor" Value="Black"/>
+                    <Setter Property="FontSize" Value="Large"/>
+                    <Setter Property="FontAttributes" Value="Bold"/>
+                </Style.Setters>
+            </Style>
+            <Style TargetType="Label" x:Key="SecureLabel">
+                <Style.Setters>
+                    <Setter Property="TextColor" Value="White"/>
+                    <Setter Property="FontSize" Value="Large"/>
+                    <Setter Property="FontAttributes" Value="Bold"/>
+                </Style.Setters>
+            </Style>
+            <Style TargetType="Entry" x:Key="SecureEntry">
+                <Style.Setters>
+                    <Setter Property="TextColor" Value="Black"/>
+                    <Setter Property="FontSize" Value="Medium"/>
+                    <Setter Property="FontAttributes" Value="Italic"/>
+                    <Setter Property="PlaceholderColor" Value="DimGray"/>
+                </Style.Setters>
+            </Style>
+            <Style TargetType="Label" x:Key="ClipboardLabel">
+                <Style.Setters>
+                    <Setter Property="TextColor" Value="Black"/>
+                    <Setter Property="FontSize" Value="Large"/>
+                    <Setter Property="FontAttributes" Value="Bold"/>
+                </Style.Setters>
+            </Style>
+            <Style TargetType="Entry" x:Key="ClipboardEntry">
+                <Style.Setters>
+                    <Setter Property="TextColor" Value="Black"/>
+                    <Setter Property="FontSize" Value="Medium"/>
+                    <Setter Property="FontAttributes" Value="Italic"/>
+                    <Setter Property="PlaceholderColor" Value="DimGray"/>
+                </Style.Setters>
+            </Style>
+        </ResourceDictionary>
+    </Application.Resources>
+</Application>

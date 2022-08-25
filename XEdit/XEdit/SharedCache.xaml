@@ -1,0 +1,23 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="XEdit.SharedCache" xmlns:local="clr-namespace:XEdit;assembly=XEdit" BackgroundColor="Purple">
+
+    <StackLayout Orientation="Vertical" VerticalOptions="CenterAndExpand">
+        <Image Source="Preferences_Title.png" HeightRequest="200" WidthRequest="200" Aspect="Fill" HorizontalOptions="Center" VerticalOptions="Center"/>
+        <Label x:Name="lab" Text="{local:Localizer PreferencesLabel}" Style="{local:Stylizator PrefLabel}" HorizontalTextAlignment="Center"/>
+        <Frame Padding="1" BackgroundColor="MediumPurple" CornerRadius="15">
+            <Entry x:Name="ent" Text="{Binding Path=Value,Mode=TwoWay,FallbackValue='_'}" Placeholder="{local:Localizer DictPlace}" Keyboard="Chat" MaxLength="512" Style="{local:Stylizator PrefEntry}" IsSpellCheckEnabled="False" Completed="Entry_Completed"/>
+        </Frame>
+        <ScrollView Orientation="Horizontal" BackgroundColor="MediumPurple">
+            <StackLayout Orientation="Horizontal">
+                <ImageButton Source="Preferences_0.png" HeightRequest="80" WidthRequest="80" Command="{Binding GetCommand}" BorderWidth="1" BorderColor="Black" Aspect="Fill" CornerRadius="90" BackgroundColor="MediumPurple"/>
+                <ImageButton Source="Preferences_1.png" HeightRequest="80" WidthRequest="80" Command="{Binding SetCommand}" BorderWidth="1" BorderColor="Black" Aspect="Fill" CornerRadius="90" BackgroundColor="MediumPurple"/>
+                <ImageButton Source="Preferences_2.png" HeightRequest="80" WidthRequest="80" Command="{Binding RemoveCommand}" BorderWidth="1" BorderColor="Black" Aspect="Fill" CornerRadius="90" BackgroundColor="MediumPurple"/>
+                <ImageButton Source="Preferences_3.png" HeightRequest="80" WidthRequest="80" Command="{Binding ContainsKeyCommand}" BorderWidth="1" BorderColor="Black" Aspect="Fill" CornerRadius="90" BackgroundColor="MediumPurple"/>
+                <ImageButton Source="Preferences_4.png" HeightRequest="80" WidthRequest="80" Command="{Binding ClearCommand}" BorderWidth="1" BorderColor="Black" Aspect="Fill" CornerRadius="90" BackgroundColor="MediumPurple"/>
+            </StackLayout>
+        </ScrollView>
+    </StackLayout>
+
+</ContentPage>

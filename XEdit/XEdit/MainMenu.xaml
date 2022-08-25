@@ -1,0 +1,8 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<TabbedPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="XEdit.MainMenu" xmlns:pages="clr-namespace:XEdit" xmlns:local="clr-namespace:Xamarin.Forms.PlatformConfiguration.AndroidSpecific;assembly=Xamarin.Forms.Core" local:TabbedPage.ToolbarPlacement="Bottom" BarTextColor="White" BarBackgroundColor="MediumPurple" UnselectedTabColor="Azure" SelectedTabColor="DeepSkyBlue">
+    <pages:SharedCache IconImageSource="cache.png"/>
+    <pages:SecureCache IconImageSource="secure.png"/>
+    <pages:ClipboardPage IconImageSource="clipboard.png"/>
+</TabbedPage>
