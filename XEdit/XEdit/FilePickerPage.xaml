@@ -1,0 +1,19 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="XEdit.FilePickerPage" xmlns:local="clr-namespace:XEdit" BackgroundColor="DimGray">
+    <ContentPage.Content>
+        <ScrollView Orientation="Vertical">
+            <StackLayout Orientation="Vertical" VerticalOptions="CenterAndExpand" BackgroundColor="DimGray">
+                <Image Source="FP_Title.png" Aspect="Fill" HeightRequest="200" WidthRequest="200" VerticalOptions="Center" HorizontalOptions="Center"/>
+                <Label Style="{local:Stylizator FPLabel}" Text="{local:Localizer FPLab}" HorizontalTextAlignment="Center"/>
+                <StackLayout Orientation="Horizontal" BackgroundColor="Gray">
+                    <ImageButton BorderWidth="1" BorderColor="Black" CornerRadius="90" HeightRequest="80" WidthRequest="80" Aspect="Fill" Source="FP_0.png" Command="{Binding SendToApiCommand}" BackgroundColor="Gray"/>
+                    <ImageButton BorderWidth="1" BorderColor="Black" CornerRadius="90" HeightRequest="80" WidthRequest="80" Aspect="Fill" Source="FP_1.png" Command="{Binding VisualizeCommand}" BackgroundColor="Gray"/>
+                    <ImageButton BorderWidth="1" BorderColor="Black" CornerRadius="90" HeightRequest="80" WidthRequest="80" Aspect="Fill" Source="FP_2.png" Command="{Binding PhotoCommand}" BackgroundColor="Gray"/>
+                    <ImageButton BorderWidth="1" BorderColor="Black" CornerRadius="90" HeightRequest="80" WidthRequest="80" Aspect="Fill" Source="FP_3.png" Command="{Binding VideoCommand}" BackgroundColor="Gray"/>
+                </StackLayout>
+            </StackLayout>
+        </ScrollView>
+    </ContentPage.Content>
+</ContentPage>

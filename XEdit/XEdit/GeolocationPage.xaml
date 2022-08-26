@@ -1,0 +1,19 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="XEdit.GeolocationPage" BackgroundColor="DarkSeaGreen" xmlns:local="clr-namespace:XEdit">
+    <ContentPage.Content>
+        <StackLayout Orientation="Vertical" VerticalOptions="CenterAndExpand" BackgroundColor="DarkSeaGreen">
+            <Image Source="GEO_Title.png" Aspect="Fill" HeightRequest="200" WidthRequest="200" VerticalOptions="Center" HorizontalOptions="Center"/>
+            <Label Style="{local:Stylizator GEOLabel}" Text="{local:Localizer GEOLab}" HorizontalTextAlignment="Center"/>
+            <Frame Padding="1" CornerRadius="15" BackgroundColor="DarkOliveGreen">
+                <Entry Style="{local:Stylizator GEOEntry}" Text="{Binding Value,Mode=TwoWay}" Placeholder="{local:Localizer GEOPlace}" IsSpellCheckEnabled="False" MaxLength="128" Keyboard="Url" Completed="Entry_Completed"/>
+            </Frame>
+            <StackLayout Orientation="Horizontal" BackgroundColor="DarkOliveGreen">
+                <ImageButton BorderWidth="1" BorderColor="Black" CornerRadius="90" HeightRequest="80" WidthRequest="80" Aspect="Fill" Source="GEO_0.png" Command="{Binding GetCurrentCommand}" BackgroundColor="DarkOliveGreen"/>
+                <ImageButton BorderWidth="1" BorderColor="Black" CornerRadius="90" HeightRequest="80" WidthRequest="80" Aspect="Fill" Source="GEO_1.png" Command="{Binding LastKnownCommand}" BackgroundColor="DarkOliveGreen"/>
+                <ImageButton BorderWidth="1" BorderColor="Black" CornerRadius="90" HeightRequest="80" WidthRequest="80" Aspect="Fill" Source="GEO_2.png" Command="{Binding CalculateCommand}" BackgroundColor="DarkOliveGreen"/>
+            </StackLayout>
+        </StackLayout>
+    </ContentPage.Content>
+</ContentPage>

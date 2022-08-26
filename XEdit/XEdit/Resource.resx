@@ -117,6 +117,9 @@
   <resheader name="writer">
     <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </resheader>
+  <data name="Altitude" xml:space="preserve">
+    <value>Высота</value>
+  </data>
   <data name="ClipboardLab" xml:space="preserve">
     <value>Буфер обмена</value>
   </data>
@@ -129,8 +132,29 @@
   <data name="DictPlace" xml:space="preserve">
     <value>Ключ-значение (через #)</value>
   </data>
+  <data name="EnableGPS" xml:space="preserve">
+    <value>Активируй GPS!</value>
+  </data>
   <data name="Extended" xml:space="preserve">
     <value>Второй набор</value>
+  </data>
+  <data name="FailedSending" xml:space="preserve">
+    <value>Произошла проблема при соединении к API</value>
+  </data>
+  <data name="FPLab" xml:space="preserve">
+    <value>Файловый Селектер</value>
+  </data>
+  <data name="FPTitle" xml:space="preserve">
+    <value>FilePicker</value>
+  </data>
+  <data name="GEOLab" xml:space="preserve">
+    <value>Геолокация</value>
+  </data>
+  <data name="GEOPlace" xml:space="preserve">
+    <value>Введите локацию(Д:Ш:В)</value>
+  </data>
+  <data name="GEOTitle" xml:space="preserve">
+    <value>Geolocation</value>
   </data>
   <data name="GetNetwork" xml:space="preserve">
     <value>Проверить доступ</value>
@@ -143,6 +167,15 @@
   </data>
   <data name="InvalidUri" xml:space="preserve">
     <value>Невалидный URI!</value>
+  </data>
+  <data name="Latitude" xml:space="preserve">
+    <value>Широта</value>
+  </data>
+  <data name="Longitude" xml:space="preserve">
+    <value>Долгота</value>
+  </data>
+  <data name="Mock" xml:space="preserve">
+    <value>Фальшивка</value>
   </data>
   <data name="NetActive" xml:space="preserve">
     <value>Доступ к сети Интернет</value>
@@ -186,8 +219,14 @@
   <data name="SecureTitle" xml:space="preserve">
     <value>SecureStorage</value>
   </data>
+  <data name="SendingStatus" xml:space="preserve">
+    <value>Статус запроса</value>
+  </data>
   <data name="Standard" xml:space="preserve">
     <value>Первый набор</value>
+  </data>
+  <data name="SuccessSending" xml:space="preserve">
+    <value>Запрос успешно отправлен</value>
   </data>
   <data name="TTSButton" xml:space="preserve">
     <value>ОЗВУЧИТЬ</value>

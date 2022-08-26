@@ -125,6 +125,28 @@
                     <Setter Property="FontAttributes" Value="Bold"/>
                 </Style.Setters>
             </Style>
+            <Style TargetType="Label" x:Key="FPLabel">
+                <Style.Setters>
+                    <Setter Property="TextColor" Value="White"/>
+                    <Setter Property="FontSize" Value="Large"/>
+                    <Setter Property="FontAttributes" Value="Bold"/>
+                </Style.Setters>
+            </Style>
+            <Style TargetType="Label" x:Key="GEOLabel">
+                <Style.Setters>
+                    <Setter Property="TextColor" Value="Black"/>
+                    <Setter Property="FontSize" Value="Large"/>
+                    <Setter Property="FontAttributes" Value="Bold"/>
+                </Style.Setters>
+            </Style>
+            <Style TargetType="Entry" x:Key="GEOEntry">
+                <Style.Setters>
+                    <Setter Property="TextColor" Value="White"/>
+                    <Setter Property="FontSize" Value="Medium"/>
+                    <Setter Property="FontAttributes" Value="Italic"/>
+                    <Setter Property="PlaceholderColor" Value="Black"/>
+                </Style.Setters>
+            </Style>
         </ResourceDictionary>
     </Application.Resources>
 </Application>

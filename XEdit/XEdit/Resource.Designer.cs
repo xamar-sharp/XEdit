@@ -61,6 +61,15 @@ namespace XEdit {
         }
         
         /// <summary>
+        ///   Ищет локализованную строку, похожую на Высота.
+        /// </summary>
+        internal static string Altitude {
+            get {
+                return ResourceManager.GetString("Altitude", resourceCulture);
+            }
+        }
+        
+        /// <summary>
         ///   Ищет локализованную строку, похожую на Буфер обмена.
         /// </summary>
         internal static string ClipboardLab {
@@ -97,11 +106,74 @@ namespace XEdit {
         }
         
         /// <summary>
+        ///   Ищет локализованную строку, похожую на Активируй GPS!.
+        /// </summary>
+        internal static string EnableGPS {
+            get {
+                return ResourceManager.GetString("EnableGPS", resourceCulture);
+            }
+        }
+        
+        /// <summary>
         ///   Ищет локализованную строку, похожую на Второй набор.
         /// </summary>
         internal static string Extended {
             get {
                 return ResourceManager.GetString("Extended", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Ищет локализованную строку, похожую на Произошла проблема при соединении к API.
+        /// </summary>
+        internal static string FailedSending {
+            get {
+                return ResourceManager.GetString("FailedSending", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Ищет локализованную строку, похожую на Файловый Селектер.
+        /// </summary>
+        internal static string FPLab {
+            get {
+                return ResourceManager.GetString("FPLab", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Ищет локализованную строку, похожую на FilePicker.
+        /// </summary>
+        internal static string FPTitle {
+            get {
+                return ResourceManager.GetString("FPTitle", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Ищет локализованную строку, похожую на Геолокация.
+        /// </summary>
+        internal static string GEOLab {
+            get {
+                return ResourceManager.GetString("GEOLab", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Ищет локализованную строку, похожую на Введите локацию(Д:Ш:В).
+        /// </summary>
+        internal static string GEOPlace {
+            get {
+                return ResourceManager.GetString("GEOPlace", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Ищет локализованную строку, похожую на Geolocation.
+        /// </summary>
+        internal static string GEOTitle {
+            get {
+                return ResourceManager.GetString("GEOTitle", resourceCulture);
             }
         }
         
@@ -138,6 +210,33 @@ namespace XEdit {
         internal static string InvalidUri {
             get {
                 return ResourceManager.GetString("InvalidUri", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Ищет локализованную строку, похожую на Широта.
+        /// </summary>
+        internal static string Latitude {
+            get {
+                return ResourceManager.GetString("Latitude", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Ищет локализованную строку, похожую на Долгота.
+        /// </summary>
+        internal static string Longitude {
+            get {
+                return ResourceManager.GetString("Longitude", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Ищет локализованную строку, похожую на Фальшивка.
+        /// </summary>
+        internal static string Mock {
+            get {
+                return ResourceManager.GetString("Mock", resourceCulture);
             }
         }
         
@@ -268,11 +367,29 @@ namespace XEdit {
         }
         
         /// <summary>
+        ///   Ищет локализованную строку, похожую на Статус запроса.
+        /// </summary>
+        internal static string SendingStatus {
+            get {
+                return ResourceManager.GetString("SendingStatus", resourceCulture);
+            }
+        }
+        
+        /// <summary>
         ///   Ищет локализованную строку, похожую на Первый набор.
         /// </summary>
         internal static string Standard {
             get {
                 return ResourceManager.GetString("Standard", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Ищет локализованную строку, похожую на Запрос успешно отправлен.
+        /// </summary>
+        internal static string SuccessSending {
+            get {
+                return ResourceManager.GetString("SuccessSending", resourceCulture);
             }
         }
         

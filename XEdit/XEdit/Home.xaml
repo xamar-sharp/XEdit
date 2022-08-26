@@ -45,6 +45,16 @@
                     <local:ConnectivityPage/>
                 </ShellContent>
             </Tab>
+            <Tab Route="file" Icon="filepicker.png" Title="{local:Localizer FPTitle}">
+                <ShellContent Route="0">
+                    <local:FilePickerPage/>
+                </ShellContent>
+            </Tab>
+            <Tab Route="geo" Icon="geolocation.png" Title="{local:Localizer GEOTitle}">
+                <ShellContent Route="0">
+                    <local:GeolocationPage/>
+                </ShellContent>
+            </Tab>
         </FlyoutItem>
     </Shell.Items>
 </Shell>
