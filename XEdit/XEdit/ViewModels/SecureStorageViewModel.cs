@@ -41,7 +41,7 @@ namespace XEdit.ViewModels
             RemoveAllCommand = new Command((obj) =>
             {
                 SecureStorage.RemoveAll();
-            }, (obj) => !string.IsNullOrEmpty(Value));
+            }, (obj) => true);
             RemoveCommand = new Command((obj) =>
             {
                 SecureStorage.Remove(Value);

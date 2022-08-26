@@ -1,0 +1,50 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<Shell xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="XEdit.Home" FlyoutWidth="300" FlyoutBackgroundColor="MediumPurple" xmlns:local="clr-namespace:XEdit">
+    <Shell.FlyoutHeader>
+        <AbsoluteLayout>
+            <Image HeightRequest="150" WidthRequest="300" Source="header.jpg" Aspect="Fill" AbsoluteLayout.LayoutBounds="0,0,1,1" AbsoluteLayout.LayoutFlags="All"/>
+            <SearchBar Placeholder="{local:Localizer HomeSearchBar}" PlaceholderColor="DimGray" CancelButtonColor="Red" AbsoluteLayout.LayoutBounds="0,1,1,0.2" Opacity="0.8" AbsoluteLayout.LayoutFlags="All" BackgroundColor="White" MaxLength="96" Keyboard="Url" SearchButtonPressed="SearchBar_SearchButtonPressed"/>
+        </AbsoluteLayout>
+    </Shell.FlyoutHeader>
+    <Shell.MenuItemTemplate>
+        <DataTemplate>
+            <StackLayout Orientation="Horizontal" Spacing="5">
+                <Image Source="{Binding Icon}" HeightRequest="50" WidthRequest="50" HorizontalOptions="StartAndExpand" Aspect="Fill"/>
+                <Label Text="{Binding Text}" Style="{local:Stylizator HomeLabel}"/>
+            </StackLayout>
+        </DataTemplate>
+    </Shell.MenuItemTemplate>
+    <Shell.Items>
+        <FlyoutItem FlyoutDisplayOptions="AsSingleItem" Title="{local:Localizer Standard}" Icon="standard.png" Route="standard" Shell.NavBarHasShadow="True" Shell.ForegroundColor="White" Shell.BackgroundColor="MediumPurple" Shell.TabBarBackgroundColor="MediumPurple" Shell.TabBarForegroundColor="White" Shell.TabBarUnselectedColor="Azure" Shell.TabBarTitleColor="Orange">
+            <Tab Route="cache" Icon="cache.png" Title="{local:Localizer PrefTitle}">
+                <ShellContent Route="0">
+                    <local:SharedCache/>
+                </ShellContent>
+            </Tab>
+            <Tab Route="secure" Icon="secure.png" Title="{local:Localizer SecureTitle}">
+                <ShellContent Route="0">
+                    <local:SecureCache/>
+                </ShellContent>
+            </Tab>
+            <Tab Route="clipboard" Icon="clipboard.png" Title="{local:Localizer ClipboardTitle}">
+                <ShellContent Route="0">
+                    <local:ClipboardPage/>
+                </ShellContent>
+            </Tab>
+            <Tab Route="texttospeech" Icon="texttospeech.png" Title="{local:Localizer TTSTitle}">
+                <ShellContent Route="0">
+                    <local:TextToSpeechPage/>
+                </ShellContent>
+            </Tab>
+        </FlyoutItem>
+        <FlyoutItem FlyoutDisplayOptions="AsSingleItem" Title="{local:Localizer Extended}" Icon="extended.png" Route="extended" Shell.NavBarHasShadow="True" Shell.ForegroundColor="White" Shell.BackgroundColor="MediumPurple" Shell.TabBarBackgroundColor="MediumPurple" Shell.TabBarForegroundColor="White" Shell.TabBarUnselectedColor="Azure" Shell.TabBarTitleColor="Orange">
+            <Tab Route="net" Icon="connectivity.png" Title="{local:Localizer NetTitle}">
+                <ShellContent Route="0">
+                    <local:ConnectivityPage/>
+                </ShellContent>
+            </Tab>
+        </FlyoutItem>
+    </Shell.Items>
+</Shell>

@@ -129,8 +129,50 @@
   <data name="DictPlace" xml:space="preserve">
     <value>Ключ-значение (через #)</value>
   </data>
+  <data name="Extended" xml:space="preserve">
+    <value>Второй набор</value>
+  </data>
+  <data name="GetNetwork" xml:space="preserve">
+    <value>Проверить доступ</value>
+  </data>
+  <data name="GetProfile" xml:space="preserve">
+    <value>Получить профили сети</value>
+  </data>
+  <data name="HomeSearchBar" xml:space="preserve">
+    <value>Введите URI:</value>
+  </data>
+  <data name="InvalidUri" xml:space="preserve">
+    <value>Невалидный URI!</value>
+  </data>
+  <data name="NetActive" xml:space="preserve">
+    <value>Доступ к сети Интернет</value>
+  </data>
+  <data name="NetConstrained" xml:space="preserve">
+    <value>Ограниченный доступ к сети</value>
+  </data>
+  <data name="NetLab" xml:space="preserve">
+    <value>Состояние сети</value>
+  </data>
+  <data name="NetLocal" xml:space="preserve">
+    <value>Вы в локальной сети</value>
+  </data>
+  <data name="NetNone" xml:space="preserve">
+    <value>Без доступа к сети</value>
+  </data>
+  <data name="NetNotify" xml:space="preserve">
+    <value>УВЕДОМЛЯТЬ ОБ ИЗМЕНЕНИИ</value>
+  </data>
+  <data name="NetStatus" xml:space="preserve">
+    <value>Статус сети изменен!</value>
+  </data>
+  <data name="NetTitle" xml:space="preserve">
+    <value>Net</value>
+  </data>
   <data name="NotFound" xml:space="preserve">
     <value>Значение не найдено!</value>
+  </data>
+  <data name="Ok" xml:space="preserve">
+    <value>Ок</value>
   </data>
   <data name="PreferencesLabel" xml:space="preserve">
     <value>Кэш OS</value>
@@ -143,6 +185,9 @@
   </data>
   <data name="SecureTitle" xml:space="preserve">
     <value>SecureStorage</value>
+  </data>
+  <data name="Standard" xml:space="preserve">
+    <value>Первый набор</value>
   </data>
   <data name="TTSButton" xml:space="preserve">
     <value>ОЗВУЧИТЬ</value>

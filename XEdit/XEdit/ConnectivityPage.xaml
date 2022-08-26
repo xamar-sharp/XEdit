@@ -1,0 +1,16 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="XEdit.ConnectivityPage" BackgroundColor="Black" xmlns:local="clr-namespace:XEdit">
+    <ContentPage.Content>
+        <StackLayout Orientation="Vertical" Spacing="20" VerticalOptions="CenterAndExpand" BackgroundColor="Black">
+            <Image Source="Net_Title.png" Aspect="Fill" HeightRequest="200" WidthRequest="200" VerticalOptions="Center" HorizontalOptions="Center"/>
+            <Label Style="{local:Stylizator NetLabel}" TextColor="White" Text="{local:Localizer NetLab}" HorizontalTextAlignment="Center"/>
+            <Label x:Name="netAccess" TextColor="{Binding NetworkState}" Style="{local:Stylizator NetLabel}" />
+            <Button Style="{local:Stylizator NetButton}" Text="{local:Localizer GetNetwork}" Command="{Binding GetNetworkCommand}" CommandParameter="{x:Reference netAccess}"/>
+            <Label x:Name="connectProfiles" TextColor="Green" Style="{local:Stylizator NetLabel}" />
+            <Button Style="{local:Stylizator NetButton}" Text="{local:Localizer GetProfile}" Command="{Binding GetProfilesCommand}" CommandParameter="{x:Reference connectProfiles}"/>
+            <RadioButton TextTransform="Uppercase" Value="1" Content="{local:Localizer NetNotify}" IsChecked="False" CheckedChanged="RadioButton_CheckedChanged" Style="{local:Stylizator NetRadio}"/>
+        </StackLayout>
+    </ContentPage.Content>
+</ContentPage>

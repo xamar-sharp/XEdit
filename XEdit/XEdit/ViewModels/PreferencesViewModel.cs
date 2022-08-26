@@ -35,7 +35,7 @@ namespace XEdit.ViewModels
             ClearCommand = new Command(obj =>
             {
                 Preferences.Clear();
-            }, (obj) => !string.IsNullOrEmpty(Value));
+            });
         }
         public ICommand GetCommand { get; set; }
         public ICommand SetCommand { get; set; }
@@ -51,7 +51,6 @@ namespace XEdit.ViewModels
             (SetCommand as Command).ChangeCanExecute();
             (ContainsKeyCommand as Command).ChangeCanExecute();
             (RemoveCommand as Command).ChangeCanExecute();
-            (ClearCommand as Command).ChangeCanExecute();
         }
         public void OnPropertyChanged([CallerMemberName] string name = default)
         {

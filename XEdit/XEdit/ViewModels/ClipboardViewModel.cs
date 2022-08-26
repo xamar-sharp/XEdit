@@ -17,7 +17,7 @@ namespace XEdit.ViewModels
             GetTextCommand = new Command(async (obj) =>
             {
                 Value =await Clipboard.GetTextAsync();
-            }, (obj) => !string.IsNullOrEmpty(Value));
+            });
             SetTextCommand = new Command(async (obj) =>
             {
                 await Clipboard.SetTextAsync(Value);
@@ -25,7 +25,7 @@ namespace XEdit.ViewModels
             HasTextCommand = new Command((obj) =>
             {
                 Value = Clipboard.HasText.ToString();
-            }, (obj) => !string.IsNullOrEmpty(Value));
+            });
         }
         public ICommand GetTextCommand { get; set; }
         public ICommand SetTextCommand { get; set; }
@@ -35,9 +35,7 @@ namespace XEdit.ViewModels
         public event PropertyChangedEventHandler PropertyChanged;
         public void UpdateState()
         {
-            (GetTextCommand as Command).ChangeCanExecute();
             (SetTextCommand as Command).ChangeCanExecute();
-            (HasTextCommand as Command).ChangeCanExecute();
         }
         public void OnPropertyChanged([CallerMemberName] string name = default)
         {

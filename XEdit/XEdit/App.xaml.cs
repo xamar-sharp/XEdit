@@ -25,29 +25,13 @@ namespace XEdit
             return App.Current.Resources[Name];
         }
     }
-    public sealed class LocaleConverter : IValueConverter
-    {
-        public object Convert(object path,Type targetType,object parameter,CultureInfo info)
-        {
-            if(path as Locale != null)
-            {
-                return (path as Locale).Name;
-            }
-            return Resource.NotFound;
-        }
-        public object ConvertBack(object path, Type targetType, object parameter, CultureInfo info)
-        {
-            return null;
-        }
-    }
     public partial class App : Application
     {
         public App()
         {
             Resource.Culture = CultureInfo.CurrentUICulture;
             InitializeComponent();
-            Resources.Add("localeConv", new LocaleConverter());
-            MainPage = new MainMenu();
+            MainPage = new Home();
         }
 
         protected override void OnStart()

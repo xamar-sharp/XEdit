@@ -97,11 +97,137 @@ namespace XEdit {
         }
         
         /// <summary>
+        ///   Ищет локализованную строку, похожую на Второй набор.
+        /// </summary>
+        internal static string Extended {
+            get {
+                return ResourceManager.GetString("Extended", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Ищет локализованную строку, похожую на Проверить доступ.
+        /// </summary>
+        internal static string GetNetwork {
+            get {
+                return ResourceManager.GetString("GetNetwork", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Ищет локализованную строку, похожую на Получить профили сети.
+        /// </summary>
+        internal static string GetProfile {
+            get {
+                return ResourceManager.GetString("GetProfile", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Ищет локализованную строку, похожую на Введите URI:.
+        /// </summary>
+        internal static string HomeSearchBar {
+            get {
+                return ResourceManager.GetString("HomeSearchBar", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Ищет локализованную строку, похожую на Невалидный URI!.
+        /// </summary>
+        internal static string InvalidUri {
+            get {
+                return ResourceManager.GetString("InvalidUri", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Ищет локализованную строку, похожую на Доступ к сети Интернет.
+        /// </summary>
+        internal static string NetActive {
+            get {
+                return ResourceManager.GetString("NetActive", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Ищет локализованную строку, похожую на Ограниченный доступ к сети.
+        /// </summary>
+        internal static string NetConstrained {
+            get {
+                return ResourceManager.GetString("NetConstrained", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Ищет локализованную строку, похожую на Состояние сети.
+        /// </summary>
+        internal static string NetLab {
+            get {
+                return ResourceManager.GetString("NetLab", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Ищет локализованную строку, похожую на Вы в локальной сети.
+        /// </summary>
+        internal static string NetLocal {
+            get {
+                return ResourceManager.GetString("NetLocal", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Ищет локализованную строку, похожую на Без доступа к сети.
+        /// </summary>
+        internal static string NetNone {
+            get {
+                return ResourceManager.GetString("NetNone", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Ищет локализованную строку, похожую на УВЕДОМЛЯТЬ ОБ ИЗМЕНЕНИИ.
+        /// </summary>
+        internal static string NetNotify {
+            get {
+                return ResourceManager.GetString("NetNotify", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Ищет локализованную строку, похожую на Статус сети изменен!.
+        /// </summary>
+        internal static string NetStatus {
+            get {
+                return ResourceManager.GetString("NetStatus", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Ищет локализованную строку, похожую на Net.
+        /// </summary>
+        internal static string NetTitle {
+            get {
+                return ResourceManager.GetString("NetTitle", resourceCulture);
+            }
+        }
+        
+        /// <summary>
         ///   Ищет локализованную строку, похожую на Значение не найдено!.
         /// </summary>
         internal static string NotFound {
             get {
                 return ResourceManager.GetString("NotFound", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Ищет локализованную строку, похожую на Ок.
+        /// </summary>
+        internal static string Ok {
+            get {
+                return ResourceManager.GetString("Ok", resourceCulture);
             }
         }
         
@@ -138,6 +264,15 @@ namespace XEdit {
         internal static string SecureTitle {
             get {
                 return ResourceManager.GetString("SecureTitle", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Ищет локализованную строку, похожую на Первый набор.
+        /// </summary>
+        internal static string Standard {
+            get {
+                return ResourceManager.GetString("Standard", resourceCulture);
             }
         }
         
