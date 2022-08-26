@@ -61,7 +61,7 @@ namespace XEdit {
         }
         
         /// <summary>
-        ///   Ищет локализованную строку, похожую на Clipboard.
+        ///   Ищет локализованную строку, похожую на Буфер обмена.
         /// </summary>
         internal static string ClipboardLab {
             get {
@@ -70,7 +70,7 @@ namespace XEdit {
         }
         
         /// <summary>
-        ///   Ищет локализованную строку, похожую на Текст для сохранения.
+        ///   Ищет локализованную строку, похожую на Значение для сохранения.
         /// </summary>
         internal static string ClipboardPlace {
             get {
@@ -106,7 +106,7 @@ namespace XEdit {
         }
         
         /// <summary>
-        ///   Ищет локализованную строку, похожую на Preferences.
+        ///   Ищет локализованную строку, похожую на Кэш OS.
         /// </summary>
         internal static string PreferencesLabel {
             get {
@@ -115,7 +115,7 @@ namespace XEdit {
         }
         
         /// <summary>
-        ///   Ищет локализованную строку, похожую на Cache OS.
+        ///   Ищет локализованную строку, похожую на Preferences.
         /// </summary>
         internal static string PrefTitle {
             get {
@@ -124,7 +124,7 @@ namespace XEdit {
         }
         
         /// <summary>
-        ///   Ищет локализованную строку, похожую на Secure Storage.
+        ///   Ищет локализованную строку, похожую на Безопасное хранилище                                                                                                                          (Хранилище ключей Android).
         /// </summary>
         internal static string SecureLab {
             get {
@@ -133,11 +133,83 @@ namespace XEdit {
         }
         
         /// <summary>
-        ///   Ищет локализованную строку, похожую на Secure.
+        ///   Ищет локализованную строку, похожую на SecureStorage.
         /// </summary>
         internal static string SecureTitle {
             get {
                 return ResourceManager.GetString("SecureTitle", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Ищет локализованную строку, похожую на ОЗВУЧИТЬ.
+        /// </summary>
+        internal static string TTSButton {
+            get {
+                return ResourceManager.GetString("TTSButton", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Ищет локализованную строку, похожую на &lt;h1&gt;Доступные локали:&lt;/h1&gt;.
+        /// </summary>
+        internal static string TTSHeader {
+            get {
+                return ResourceManager.GetString("TTSHeader", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Ищет локализованную строку, похожую на Текст в речь.
+        /// </summary>
+        internal static string TTSLabel {
+            get {
+                return ResourceManager.GetString("TTSLabel", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Ищет локализованную строку, похожую на Тон:.
+        /// </summary>
+        internal static string TTSPitch {
+            get {
+                return ResourceManager.GetString("TTSPitch", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Ищет локализованную строку, похожую на Текст для озвучки.
+        /// </summary>
+        internal static string TTSPlace {
+            get {
+                return ResourceManager.GetString("TTSPlace", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Ищет локализованную строку, похожую на TextToSpeech.
+        /// </summary>
+        internal static string TTSTitle {
+            get {
+                return ResourceManager.GetString("TTSTitle", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Ищет локализованную строку, похожую на Громкость:.
+        /// </summary>
+        internal static string TTSVolume {
+            get {
+                return ResourceManager.GetString("TTSVolume", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Ищет локализованную строку, похожую на ВВЕРХ.
+        /// </summary>
+        internal static string Up {
+            get {
+                return ResourceManager.GetString("Up", resourceCulture);
             }
         }
     }

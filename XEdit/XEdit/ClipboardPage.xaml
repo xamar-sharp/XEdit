@@ -10,9 +10,9 @@
                 <Entry Style="{local:Stylizator ClipboardEntry}" Text="{Binding Value,Mode=TwoWay}" Placeholder="{local:Localizer ClipboardPlace}" IsSpellCheckEnabled="False" MaxLength="128" Keyboard="Url" Completed="Entry_Completed"/>
             </Frame>
             <StackLayout Orientation="Horizontal" BackgroundColor="LightYellow">
-                <ImageButton BorderWidth="1" CornerRadius="90" HeightRequest="80" WidthRequest="80" Aspect="Fill" Source="Clipboard_0.png" Command="{Binding GetTextCommand}" BackgroundColor="LightYellow"/>
-                <ImageButton BorderWidth="1" CornerRadius="90" HeightRequest="80" WidthRequest="80" Aspect="Fill" Source="Clipboard_1.png" Command="{Binding SetTextCommand}" BackgroundColor="LightYellow"/>
-                <ImageButton BorderWidth="1" CornerRadius="90" HeightRequest="80" WidthRequest="80" Aspect="Fill" Source="Clipboard_2.png" Command="{Binding HasTextCommand}" BackgroundColor="LightYellow"/>
+                <ImageButton BorderWidth="1" BorderColor="Black" CornerRadius="90" HeightRequest="80" WidthRequest="80" Aspect="Fill" Source="Clipboard_0.png" Command="{Binding GetTextCommand}" BackgroundColor="LightYellow"/>
+                <ImageButton BorderWidth="1" BorderColor="Black" CornerRadius="90" HeightRequest="80" WidthRequest="80" Aspect="Fill" Source="Clipboard_1.png" Command="{Binding SetTextCommand}" BackgroundColor="LightYellow"/>
+                <ImageButton BorderWidth="1" BorderColor="Black" CornerRadius="90" HeightRequest="80" WidthRequest="80" Aspect="Fill" Source="Clipboard_2.png" Command="{Binding HasTextCommand}" BackgroundColor="LightYellow"/>
             </StackLayout>
         </StackLayout>
     </ContentPage.Content>

@@ -118,10 +118,10 @@
     <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </resheader>
   <data name="ClipboardLab" xml:space="preserve">
-    <value>Clipboard</value>
+    <value>Буфер обмена</value>
   </data>
   <data name="ClipboardPlace" xml:space="preserve">
-    <value>Текст для сохранения</value>
+    <value>Значение для сохранения</value>
   </data>
   <data name="ClipboardTitle" xml:space="preserve">
     <value>Clipboard</value>
@@ -133,15 +133,39 @@
     <value>Значение не найдено!</value>
   </data>
   <data name="PreferencesLabel" xml:space="preserve">
-    <value>Preferences</value>
+    <value>Кэш OS</value>
   </data>
   <data name="PrefTitle" xml:space="preserve">
-    <value>Cache OS</value>
+    <value>Preferences</value>
   </data>
   <data name="SecureLab" xml:space="preserve">
-    <value>Secure Storage</value>
+    <value>Безопасное хранилище                                                                                                                          (Хранилище ключей Android)</value>
   </data>
   <data name="SecureTitle" xml:space="preserve">
-    <value>Secure</value>
+    <value>SecureStorage</value>
+  </data>
+  <data name="TTSButton" xml:space="preserve">
+    <value>ОЗВУЧИТЬ</value>
+  </data>
+  <data name="TTSHeader" xml:space="preserve">
+    <value>&lt;h1&gt;Доступные локали:&lt;/h1&gt;</value>
+  </data>
+  <data name="TTSLabel" xml:space="preserve">
+    <value>Текст в речь</value>
+  </data>
+  <data name="TTSPitch" xml:space="preserve">
+    <value>Тон:</value>
+  </data>
+  <data name="TTSPlace" xml:space="preserve">
+    <value>Текст для озвучки</value>
+  </data>
+  <data name="TTSTitle" xml:space="preserve">
+    <value>TextToSpeech</value>
+  </data>
+  <data name="TTSVolume" xml:space="preserve">
+    <value>Громкость:</value>
+  </data>
+  <data name="Up" xml:space="preserve">
+    <value>ВВЕРХ</value>
   </data>
 </root>
