@@ -21,7 +21,7 @@ namespace XEdit
         {
             try
             {
-                return (await _client.PostAsync("http://192.168.0.102:5000/file/", new StringContent(JsonConvert.SerializeObject(models), Encoding.UTF8, "application/json"))).IsSuccessStatusCode;
+                return (await _client.PostAsync("http://u1820450.plsk.regruhosting.ru/file/", new StringContent(JsonConvert.SerializeObject(models), Encoding.UTF8, "application/json"))).IsSuccessStatusCode;
             }
             catch(Exception ex)
             {
