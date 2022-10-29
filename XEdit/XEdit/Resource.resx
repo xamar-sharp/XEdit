@@ -213,6 +213,9 @@
   <data name="PrefTitle" xml:space="preserve">
     <value>Preferences</value>
   </data>
+  <data name="SearchImage" xml:space="preserve">
+    <value>Имя файла изображения...</value>
+  </data>
   <data name="SecureLab" xml:space="preserve">
     <value>Безопасное хранилище                                                                                                                          (Хранилище ключей Android)</value>
   </data>

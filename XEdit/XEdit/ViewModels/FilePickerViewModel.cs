@@ -43,7 +43,7 @@ namespace XEdit.ViewModels
     }
     public sealed class FilePickerViewModel : INotifyPropertyChanged
     {
-        public FilePickerViewModel(ContentPage page)
+        public FilePickerViewModel(ContentPage page,Image target)
         {
             _mainPage = page;
             VideoCommand = new Command(async () =>
@@ -151,12 +151,17 @@ namespace XEdit.ViewModels
                     }
                 });
             });
+            SetImageCommand = new Command((obj) =>
+            {
+                target.Source = ImageSource.FromUri(new Uri("http://u1820450.plsk.regruhosting.ru/file/"+(obj as Entry).Text));
+            }, (obj) => target != null);
         }
         public ICommand SendToApiCommand { get; set; }
         /// <summary>
         /// Warning!CPU-bound operation!
         /// </summary>
         public ICommand VisualizeCommand { get; set; }
+        public ICommand SetImageCommand { get; set; }
         public ICommand PhotoCommand { get; set; }
         public ICommand VideoCommand { get; set; }
         private readonly ContentPage _mainPage;

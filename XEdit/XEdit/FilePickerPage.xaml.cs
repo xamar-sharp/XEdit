@@ -17,7 +17,7 @@ namespace XEdit
         {
             InitializeComponent();
             Title = Resource.FPTitle;
-            Model = new FilePickerViewModel(this);
+            Model = new FilePickerViewModel(this,img);
             this.BindingContext = Model;
         }
     }

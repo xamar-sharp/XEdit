@@ -349,6 +349,15 @@ namespace XEdit {
         }
         
         /// <summary>
+        ///   Ищет локализованную строку, похожую на Имя файла изображения....
+        /// </summary>
+        internal static string SearchImage {
+            get {
+                return ResourceManager.GetString("SearchImage", resourceCulture);
+            }
+        }
+        
+        /// <summary>
         ///   Ищет локализованную строку, похожую на Безопасное хранилище                                                                                                                          (Хранилище ключей Android).
         /// </summary>
         internal static string SecureLab {
